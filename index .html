@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathaniel</title>
+    <style>
+        body{
+            font-family: monospace;
+            font-size: 15px;
+            background-color: #d1d1d1;
+            padding-top: 25px;
+            display: flex;
+        }
+	a{
+	    color: #fafafa;
+	}
+	a:hover{
+	    color: #d1d1d1;
+	}
+        .linha{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        aside.perfil {
+            width: 350px;
+        }
+        
+        main.detalhamento {
+            width: calc(100vw - 350px);
+            max-width: 1200px;
+            margin-left: 20px;
+            border-radius: 10px;
+        }
+
+        main.detalhamento>.card:not(:first-child) {
+            margin-top: 2em;
+        }
+
+        .card{
+            padding: 10px;
+
+            background-color: #0f254d;
+            box-shadow: 0px 0px 0px 3px #0f254d;
+            color: #fafafa;
+
+            border: 3px solid #fafafa;            
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 40px;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 10px;
+        }
+
+        .nathaniel .foto-perfil{
+            width: 200px;
+            border: 5px solid #0f254d;
+            box-shadow: 0px 0px 0px 3px #fafafa;
+            border-radius: 100%;
+        }
+
+        .divisoria{
+            height: 0;
+            width: 100%;            
+            border-top: 3px solid #fafafa;
+        }
+        .detalhamento .divisoria{
+            margin-top: 2em;
+        }
+        @media (max-width: 600px) {
+            body{
+                display: block;
+                width: fit-content;
+            }
+            main.detalhamento{
+                width: 95%;
+                margin-top: 20px;
+                margin-left: 0;
+            }
+            .nathaniel{
+                position: initial;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <aside class="perfil">
+        <article class="nathaniel card">
+            <img class="foto-perfil" src="foto.jpeg" alt="Foto de Nathaniel">
+            <h2>Sobre Mim</h2>   
+            <div class="divisoria"></div>         
+            <p><b>Nome:</b> Nathaniel Rocha Santana</p>
+            <p><b>Cursando:</b> Ciência da Computação-UFPE</p>
+            <p><b>Cursou:</b> Técnico em Informática-IFS</p>
+            <p><b>Ocupação:</b> Desenvolvedor Jr. na Atos Capital</p>
+            <p><b>Idade:</b> 20 anos</p>
+            <p><b>Telefone:</b> (79) 9 9152-2469 </p>
+        </article>  
+    </aside>    
+    <main class="detalhamento">
+        <div class="card">
+            <article class="historia">
+                <h3>#Introdução</h3>
+                <p>Nasci na Bahia, e desde então me tornei nômade vivendo um pouco em vários lugares 
+                até chegar em Aracaju onde passei 10 anos e iniciei minha carreira como programador. 
+                Tenho uma facilidade maior para exatas, mas tenho alma de humanas. Então ao mesmo tempo 
+                que programo e resolvo problemas, também amo criar e narrar histórias, atuar, dançar e 
+                expressar meu lado artístico.</p>
+            </article>
+        </div>
+        
+        <div class="card">
+            <article class="habilidades">
+                <H3>#Habilidades:</H3>
+                <p><b>PHP: </b>
+                    2 anos de experiência em desenvolvimento de aplicações web com a linguagem PHP. 
+                    Como principais projetos na linguagem tenho o Industria4.1 (TCC).
+                </p>
+                <p><b>Java: </b>
+                    1 ano de experiência em Java, desenvolvendo programas básicos com 
+                    manipulação e consulta em banco de dados.
+                </p>
+                <p><b>JavaScript: </b>
+                    Conhecimentos básicos em desenvolvimento de aplicações web com a linguagem Java Script.
+                </p>
+                <p><b>C#: </b>
+                    1 ano de experiência com C#, na analise e desenvolvimento de um robô leitor de sites, 
+                    em consumo de dados financeiros via api e arquivos EDI.
+                </p>
+            </article>
+        </div>
+        
+        <div class="card">
+            <article class="academica">
+                <h3>#Experiência Acadêmica:</h3>
+                <p><b><a href='http://www.ifs.edu.br/'>IFS</a> - Informática: </b>
+                    Cursei durante 3 anos juntamente com o ensino médio entre 2017 e 2019. 
+                    Curso técnico voltado para o planejamento e
+                    desenvolvimento de sistemas computacionais, aplicações
+                    web e manutenção de banco de dados.
+                </p>
+                <p><b><a href='https://www.prepara.com.br/'>Prepara Cursos</a> - Programação: </b>
+                    Cursei por 1 ano em 2017. Curso com finalidade de aperfeiçoamento das
+                    habilidades com as linguagens: PHP, Java, Pascal e HTML. Além de 
+                    desenvolver conhecimentos com manipulação de dados(SQL)
+                </p>
+                <p><b><a href='https://www.cisco.com/c/pt_br/index.html'>Cisco:</a> </b>
+                    Roteamento e Switching CCNA: Introdução a Redes: Cursei por 1 ano em 2018. 
+                    Curso voltado para o desenvolvimento de habilidades na área de computação, 
+                    redes, dispositivos e coisas(Internet of Things).
+                </p>
+                <p><b><a href='https://www.udemy.com/pt/'>Udemy:</a> </b>
+                    Curso Web Moderno Completo: Cursei por 6 meses em 2021.
+                </p>
+            </article>
+        </div>
+        
+        <div class="card">
+            <article class="profissional">
+                <h3>#Experiência Profissional</h3>
+                <a href='https://www.atoscapital.com.br/v3/'>Atos Capital</a>: Estou há um ano desde 2021.  Atuando na área Back-End  (na linguagem C#), onde:
+                Desenvolvi um Robô que processava dados coletados via leitura de site
+                Programei um sistema que consumia dados de uma AP
+                Colaborei na análise e desenvolvimento de um código que lia e processava dados de Arquivo EDI.
+                Me tornei mentor dos profissionais ingressados na empresa.
+            </article>
+        </div>
+    </main>
+</body>
+</html>
